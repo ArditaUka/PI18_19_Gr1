@@ -157,7 +157,7 @@ input, button
 }
 .main_top img
 {
-	width: 12vw;
+	width: 11vw;
 	height: 25vh;
 	margin-right: 50px;
 }
@@ -276,7 +276,8 @@ footer
 .foot
 {
 	display: inline-flex;
-	margin-left: 5px;
+	margin-left: 130px;
+
 }
 .foot a
 {
