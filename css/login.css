@@ -1,0 +1,99 @@
+html, body
+{
+	background: linear-gradient(-135deg, #c850c0, #4158d0);
+}
+.container
+{
+	max-width: 1300px;
+	margin: 0 auto;
+}
+
+.img , .input
+{
+	width: 50%;
+	background-color: white;
+	padding-top: 150px;
+}
+.img
+{
+	border-top-left-radius: 30px;
+	border-bottom-left-radius: 30px;
+}
+.input
+{
+	border-top-right-radius: 30px;
+	border-bottom-right-radius: 30px;
+}
+
+.total
+{
+	height: 650px;
+	margin-top: 60px;
+	padding: 5px;
+	display: flex;
+}
+
+[type="email"], [type="password"],[type="submit"]
+{	
+	border:none;
+	outline: none;
+	border-radius: 30px;
+	width: 400px;
+	background-color: #009a9a;
+	padding: 30px;
+	font-size: 19px;
+
+}
+
+::placeholder 
+{
+	color: blue;
+	font-weight: 600;
+	padding: 10px;
+	opacity: 0.5;
+	background-color: #009a9a;
+	font-size: 19px;
+}
+.simple-form
+{
+	text-align: center;
+	margin: 100px 400px;
+}
+
+
+#ph
+{
+	padding: 10px;
+	border-radius: 5px;
+	outline: none;
+}
+#phone
+{
+	width: 170px;
+	padding: 10px;
+	border-radius: 5px;
+	outline: none;
+}
+
+#but
+{
+	color: white;
+	font-size: 18px;
+}
+
+#butto
+{
+	width: 200px;
+	padding: 10px;
+	border-radius: 5px;
+	outline: none;
+	background-color: #0c6996;
+	border:2px solid #01010c;
+	color: aliceblue;
+	font-size: 16px;
+}
+#log 
+{
+	text-decoration: none;
+	color: dodgerblue;
+}
