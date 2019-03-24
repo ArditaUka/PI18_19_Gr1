@@ -1,6 +1,7 @@
 html, body
 {
-	background: linear-gradient(-135deg, #c850c0, #4158d0);
+	background: linear-gradient(-135deg, #c850c0, #4158d0); 
+	font-family: 'Raleway', sans-serif;
 }
 .container
 {
@@ -19,6 +20,11 @@ html, body
 	border-top-left-radius: 30px;
 	border-bottom-left-radius: 30px;
 }
+.img img:hover
+{
+	transform: rotate(360deg);
+	transition: 2s ease;
+}
 .input
 {
 	border-top-right-radius: 30px;
@@ -26,74 +32,59 @@ html, body
 }
 
 .total
-{
-	height: 650px;
-	margin-top: 60px;
-	padding: 5px;
-	display: flex;
+{ 
+	width: 960px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px 130px 0px 95px;
+    margin-top: 30px;
 }
 
-[type="email"], [type="password"],[type="submit"]
+[type="email"], [type="password"],[type="submit"] , #butto
 {	
-	border:none;
-	outline: none;
-	border-radius: 30px;
-	width: 400px;
-	background-color: #009a9a;
-	padding: 30px;
-	font-size: 19px;
-
+	border: none;
+    outline: none;
+    border-radius: 30px;
+    width: 300px;
+    background-color: #2A4B7C;
+    padding: 16px;
+    font-size: 19px;
+    color: white;
+}
+[type="email"]:hover, [type="password"]:hover,[type="submit"]:hover
+{
+	transform: scale(1.02);
+}
+#butto
+{
+	width: 328px;
+	color: white;
 }
 
 ::placeholder 
 {
-	color: blue;
-	font-weight: 600;
-	padding: 10px;
+	color: white;
+	padding: 5px;
 	opacity: 0.5;
-	background-color: #009a9a;
 	font-size: 19px;
 }
-.simple-form
+.a , .txt2
 {
-	text-align: center;
-	margin: 100px 400px;
-}
-
-
-#ph
-{
-	padding: 10px;
-	border-radius: 5px;
-	outline: none;
-}
-#phone
-{
-	width: 170px;
-	padding: 10px;
-	border-radius: 5px;
-	outline: none;
-}
-
-#but
-{
-	color: white;
-	font-size: 18px;
-}
-
-#butto
-{
-	width: 200px;
-	padding: 10px;
-	border-radius: 5px;
-	outline: none;
-	background-color: #0c6996;
-	border:2px solid #01010c;
-	color: aliceblue;
-	font-size: 16px;
-}
-#log 
-{
+	padding: 85px 5px;
 	text-decoration: none;
-	color: dodgerblue;
+	font-size: 17px;
+}
+.txt1
+{
+	color: #999999;
+}
+.text-center 
+{
+    padding-left: 35px;
 }
