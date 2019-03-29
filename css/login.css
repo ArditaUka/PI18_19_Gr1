@@ -46,7 +46,7 @@ html, body
     margin-top: 30px;
 }
 
-[type="email"], [type="password"],[type="submit"] , #butto
+[type="email"], [type="password"],[type="submit"],[type="text"] , #butto
 {	
 	border: none;
     outline: none;
@@ -61,6 +61,7 @@ html, body
 {
 	transform: scale(1.02);
 }
+
 #butto
 {
 	width: 328px;
@@ -73,6 +74,11 @@ html, body
 	padding: 5px;
 	opacity: 0.5;
 	font-size: 19px;
+}
+input[type=text]::-webkit-input-placeholder::after
+{
+	content: '*';
+	color: #9B1B30;
 }
 .a , .txt2
 {
@@ -87,4 +93,25 @@ html, body
 .text-center 
 {
     padding-left: 35px;
+}
+
+/* SIGN UP*/
+
+button
+{
+	margin: 37px 5px;
+}
+#get
+{
+    border: 0;
+    outline: none;
+    border-radius: 0;
+    width: 330px;
+    padding: 15px;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    background: #1ab188;
+    color: #ffffff;
 }
