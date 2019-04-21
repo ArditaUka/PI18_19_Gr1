@@ -307,3 +307,17 @@ footer
 	color: #77212E;
 }
 
+
+/*****************		Iphones 	********************************/
+.sect ul 
+{
+	display: flex;
+}
+.sect ul li
+{
+	margin-left: 20px;
+}
+.sect ul li a
+{
+	color:  #034F84;
+}
