@@ -291,6 +291,15 @@ footer
 {
 	color: #77212E;
 }
+/*.a >a > img {
+	max-width: 100%;
+    min-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+*/
+
+
 .rights
 {
 	display: flex;
