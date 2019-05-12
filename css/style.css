@@ -346,3 +346,43 @@ footer
 	text-align: center;
 	word-wrap: break-word;
 }
+
+/********************	MacBooks	****************************/
+.well 
+{
+    background-color: #eceff1;
+    box-shadow: none;
+    padding: 4px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 90px;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+.diva
+{
+	margin: 0 15px;
+}
+table,tr, td
+{
+	border: 1px solid #dddddd;
+	border-collapse: collapse;
+	padding: 15px;
+	width: 100%;
+}
+thead
+{
+	background-color: lightgrey;
+	color: black;
+	font-weight: 600;
+	pad
+}
+tbody
+{
+	color: #034F84;
+}
+.row	
+{
+	display: flex;
+	margin: 10px;
+}
