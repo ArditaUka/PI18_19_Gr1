@@ -10,7 +10,7 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 <body>
-<?php include 'apple.php' ?>
+<?php include 'header.php' ?>
 
 
 	<main class="container">
