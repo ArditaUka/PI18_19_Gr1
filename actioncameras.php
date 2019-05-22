@@ -12,7 +12,6 @@
 <body>
 
 <?php include 'header.php' ?>
-
 	<main class="container">
 
 		<div class="icons" style="margin-top: 80px">
