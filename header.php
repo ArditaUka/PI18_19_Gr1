@@ -52,23 +52,18 @@
 
 				<a href="laptops.php"><img src="img/laptop.png" width="13px" height="13px">&nbsp;Laptop</a>
 				<div class="dropdown-content">
-				<a href="#">MacBooks</a>
-				<a href="#">Chromebooks</a>
-				<a href="#">Windows</a>				
+				<a href="macbooks.php">MacBooks</a>
+				<a href="chromebook.php">Chromebooks</a>
+				<a href="windows.php">Windows</a>				
 				</div>
 
 			</div>	
 
 			<div class="dropdown">
 
-				<a href="#"><img src="img/camera.png" width="13px" height="13px">&nbsp;Cameras</a>
+				<a href="cameras.php"><img src="img/camera.png" width="13px" height="13px">&nbsp;Cameras</a>
 				<div class="dropdown-content">
-				<a href="#">Action Cameras</a>
-				<a href="#">Canon</a>
-				<a href="#">DSLR Cameras</a>
-				<a href="#">Lenses</a>
-				<a href="#">Mirrorless Cameras</a>
-				<a href="#">Nikon</a>
+				<a href="actioncameras.php">Action Cameras</a>
 
 				</div>
 
@@ -103,7 +98,7 @@
 			</div>
 			
 			<a href="Watches.php"><img src="img/clock.png" width="13px" height="13px">&nbsp;Watches</a>
-			<a href="#"><img src="img/home.png" width="13px" height="13px">&nbsp;Home Tech</a>
+			<a href="hometech.php"><img src="img/home.png" width="13px" height="13px">&nbsp;Home Tech</a>
 
 		</section>
 
