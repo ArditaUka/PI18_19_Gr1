@@ -1,14 +1,14 @@
 <?php 
 
-define("HOST", 'mysql: host=localhost;dbname=exoy');
-define("USER", 'root');
-define("Password", 'fiek123');
-$conn = mysqli_connect(HOST,USER,Password);
+	define ( 'HOST', '127.0.0.1:3307' );
+   define ( 'USER', 'root' );
+   define ( 'PASSWORD', '' );
+   define ( 'DB_NAME', 'exoy' );
 
-if (!$conn) {
-	die("Connection failed: " . mysqli_connect_error());
-}
+   $conn = mysqli_connect(HOST,USER,PASSWORD,DB_NAME);
 
-echo "Connected successfully";
-
+   if (!$conn) 
+   {
+    die("Connection failed: " . mysqli_connect_error());
+	}
 ?>
