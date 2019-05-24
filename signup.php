@@ -3,6 +3,7 @@
 	<head>
 		<title>Sign up</title>
 		<link rel="stylesheet" type="text/css" href="css/loginSignup.css">
+		<link href="https://fonts.googleapis.com/css?family=Mandali&display=swap" rel="stylesheet">
 	</head>
 	<body class="bgimg">
 		<form action="#" method="POST" id="forma">
@@ -22,7 +23,8 @@
 			<label>Confirm Password</label><br><br>
 			<input type="password" name="password1" placeholder="*******************" id="inputat">
 			<br><br>
-			<button name="submit" id="btn">Sign Up</button>
+			<button name="submit" id="btn">Sign Up</button><br>
+			<a href="login.php">Already have an account?Login here!</a>
 		</form>
 	</body>
 </html>
