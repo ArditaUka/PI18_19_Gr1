@@ -12,15 +12,16 @@
 
 		<form action="#" method="post">
 
-			<span style="font-family: 'Roboto Condensed', sans-serif;">Login</span>
-			<br><br><br>
+			<span style="margin-left: 55px; font-size: 25px; font-family: 'Roboto Condensed', sans-serif;">Login</span>
+			<br><br>
 			<a href="#" class="btn-login-with bg1 m-b-10">Login with Facebook</a><br>
 			<a href="#" class="btn-login-with bg2">Login with Twitter</a><br>
 
 			<div>
-			<span style="font-family: 'Roboto Condensed', sans-serif;">Login with email</span>
+			<span style="font-size: 25px; font-family: 'Roboto Condensed', sans-serif;">Login with email</span>
 			<input type="email" name="email" placeholder="Email" class="inp"><br><br>
 			<input type="password" name="password" placeholder="Password" class="inp"><br><br>
+			<button name="login" style="margin-bottom: 0px; margin-left: 45px;"> LOG IN</button>
 			</div>
 
 			<div>
