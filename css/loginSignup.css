@@ -35,3 +35,39 @@ a
 	color: #004B8D;
 	font-family: 'Mandali', sans-serif;
 }
+
+/************************** 			LOG IN 			*****************************************************/
+
+.btn-login-with 
+{
+    font-size: 16px;
+    line-height: 1.2;
+    color: white;
+    display: flex;
+    justify-content: center;
+    border-radius: 25px;
+    margin-top: 0px;
+    padding: 15px;
+}
+.bg1 
+{
+    background-color: #3b5998;
+}
+.m-b-10 
+{
+    margin-bottom: 10px;
+}
+
+
+.bg2 
+{
+    background-color: #1da1f2;
+}
+div	
+{
+	margin-top: 50px;
+}
+.inp
+{
+	margin-top: 25px;
+}
