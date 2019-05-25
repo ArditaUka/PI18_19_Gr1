@@ -6,8 +6,64 @@
 		<link href="https://fonts.googleapis.com/css?family=Mandali&display=swap" rel="stylesheet">
 	</head>
 	<body class="bgimg">
+
+		<?php 
+
+			session_start();
+
+			$output = NULL;
+
+			if(isset($_POST['submit'])){
+				//connect to database
+				include_once 'database.php';
+				$fullname = mysqli_real_escape_string($conn, $_POST['name']);
+				$email = mysqli_real_escape_string($conn, $_POST['email']);
+				$username = mysqli_real_escape_string($conn, $_POST['username']);   //mysql injection using $myslqi->real_escape_string
+				$password = mysqli_real_escape_string($conn, $_POST['password']);
+				$confirmPassword = mysqli_real_escape_string($conn, $_POST['password1']);
+
+
+
+				$query = $conn->query("SELECT * FROM user where username = '$username'");
+				if (empty($fullname) OR empty($email) OR empty($username) OR empty($password) OR empty($confirmPassword)) {
+					$output = "Please fill in all fields";
+				 }//else if ($query->num_rows != 0 ) {
+				// 	$output = "That username is already taken. ";
+				// }
+				// else if ($confirmPassword != password) {
+				// 	$output = "Your passwords don't match."
+				// }
+				else if(strlen($password)<6){
+					$output = "Your password must be at least 5 characters.";
+				}
+				else{
+					//encrypt the password
+					$password = md5($password);
+					
+					//insert the variable
+
+					$insert = $conn->query("INSERT INTO user(fullname, email, username, password) VALUES('$fullname', '$email','$username','$password')");
+							if ($insert != TRUE) {
+								$output = "There was a problem <br>";
+								$output .= $conn->error;
+							}
+							else{
+								$output = "You have been registred!";
+							}
+							echo $output;
+				}
+			}
+
+/*
+			header('location: index.php ');*/
+
+
+		 ?>
+
+
+
+
 		<form action="#" method="POST" id="forma">
-			
 			<label>Full Name</label><br><br>
 			<input type="text" name="name" placeholder="Name..." id="inputat">
 			<br><br>
@@ -26,5 +82,9 @@
 			<button name="submit" id="btn">Sign Up</button><br>
 			<a href="login.php">Already have an account?Login here!</a>
 		</form>
+
+		<?php 
+		echo $output;
+		 ?>
 	</body>
 </html>
