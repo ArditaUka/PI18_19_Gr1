@@ -8,7 +8,44 @@
 		<link rel="stylesheet" type="text/css" href="css/loginSignup.css">
 	</head>
 	<body>
-		
+		<?php 
+
+			session_start();
+        
+            $output = NULL;
+           
+			if(isset($_POST['login'])){
+				
+				include_once 'database.php';
+				$email = mysqli_real_escape_string($conn, $_POST['email']);
+				$password = mysqli_real_escape_string($conn, $_POST['password']);
+
+                //validimi
+                if (empty($email)) {
+                   $output = "Email Required";
+                    
+                }
+                if (empty($password)) {
+                   $output = "Password Required";               
+                }
+
+
+                $password = md5($password);
+                $query = $conn->query("SELECT * FROM user where username = '$username' AND password='$password'");
+                $result = mysql_query($query);
+                if (mysql_num_rows($result) == 1) {
+                    
+                    $_SESSION['name'] = $user['name'];
+                    $_SESSION['email'] = $user['email'];
+                    $_SESSION['username'] = $user['username'];
+                    $_SESSION['password'] = $user['password'];
+                    $output = "Successfully logged in";    }
+                else{
+                    $output = "There was a problem, please try again";
+                }
+                   echo $output;     
+                }
+        ?>
 
 		<form action="#" method="post">
 
