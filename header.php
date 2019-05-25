@@ -1,14 +1,17 @@
-<?php 
 
-
-	echo '<header>
-		<div class="header container">
-			
+<?php session_start();?>
+<header>
+		<div class="header container">			
 			<h2 class="title">Exoy</h2>
 			<input type="text" name="search" placeholder="Search for phones, tablets, laptops and more..."><button class="buto"><img src="img/search.png" width="15px" height="15px"></button>
 			<button class="sell">Sell on Exoy</button>
-			<a href="login.php"><button>Login</button></a>
-			<a href="signup.php"><button>Register</button></a>
+				<?php if(!isset($_SESSION['name'])) { ?>
+						<a href="login.php"><button>Login</button></a> 			
+				<?php } ?>
+				<?php if(!isset($_SESSION['name'])) {  ?>
+				<a href="signup.php"><button>Register</button></a>
+				<?php } ?>
+				<?php if(isset($_SESSION['name'])) echo "Welcome, " . $_SESSION['name']; ?>
 			<button><img src="img/addtocart.png" width="15px" height="15px"></button>
 
 		</div>
@@ -103,7 +106,5 @@
 		</section>
 
 		<hr>
-	</header>';
+	</header>;
 	
-
- ?>
