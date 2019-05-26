@@ -1,12 +1,13 @@
 
-<?php session_start();?>
+<?php session_start();
+include("log_functions.php");?>
 <header>
-		<div class="header container">			
+		<div class="header container">
 			<h2 class="title">Exoy</h2>
 			<input type="text" name="search" placeholder="Search for phones, tablets, laptops and more..."><button class="buto"><img src="img/search.png" width="15px" height="15px"></button>
 			<button class="sell">Sell on Exoy</button>
 				<?php if(!isset($_SESSION['name'])) { ?>
-						<a href="login.php"><button>Login</button></a> 			
+						<a href="login.php"><button>Login</button></a>
 				<?php } ?>
 				<?php if(!isset($_SESSION['name'])) {  ?>
 				<a href="signup.php"><button>Register</button></a>
@@ -19,7 +20,7 @@
 		<hr>
 
 		<section class="container">
-			
+
 			<div class="dropdown">
 
 				<a href="iphones.php"><img src="img/apple.png" width="13px" height="13px"> &nbsp;iPhone</a>
@@ -33,7 +34,7 @@
 				<a href="iPhone6sPlus.php">iPhone 6S Plus</a>
 				</div>
 
-			</div>	
+			</div>
 
 			<div class="dropdown">
 
@@ -49,7 +50,7 @@
 
 				</div>
 
-			</div>	
+			</div>
 
 			<div class="dropdown">
 
@@ -57,10 +58,10 @@
 				<div class="dropdown-content">
 				<a href="macbooks.php">MacBooks</a>
 				<a href="chromebook.php">Chromebooks</a>
-				<a href="windows.php">Windows</a>				
+				<a href="windows.php">Windows</a>
 				</div>
 
-			</div>	
+			</div>
 
 			<div class="dropdown">
 
@@ -70,7 +71,7 @@
 
 				</div>
 
-			</div>	
+			</div>
 
 			<div class="dropdown">
 
@@ -99,7 +100,7 @@
 				</div>
 
 			</div>
-			
+
 			<a href="Watches.php"><img src="img/clock.png" width="13px" height="13px">&nbsp;Watches</a>
 			<a href="hometech.php"><img src="img/home.png" width="13px" height="13px">&nbsp;Home Tech</a>
 
@@ -107,4 +108,3 @@
 
 		<hr>
 	</header>;
-	

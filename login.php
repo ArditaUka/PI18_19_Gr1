@@ -1,3 +1,13 @@
+<?php
+		session_start();
+
+		include ("log_functions.php");
+
+		if (isset($_POST['login'])) {
+			log_user_in($_POST['email'],$_POST['password']);
+		}
+ ?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -8,46 +18,8 @@
 		<link rel="stylesheet" type="text/css" href="css/loginSignup.css">
 	</head>
 	<body>
-		<?php 
 
-			session_start();
-        
-            $output = NULL;
-           
-			if(isset($_POST['login'])){
-				
-				include_once 'database.php';
-				$email = mysqli_real_escape_string($conn, $_POST['email']);
-				$password = mysqli_real_escape_string($conn, $_POST['password']);
-
-                //validimi
-                if (empty($email)) {
-                   $output = "Email Required";
-                    
-                }
-                if (empty($password)) {
-                   $output = "Password Required";               
-                }
-
-
-                $password = md5($password);
-                $query = $conn->query("SELECT * FROM user where username = '$username' AND password='$password'");
-                $result = mysql_query($query);
-                if (mysql_num_rows($result) == 1) {
-                    
-                    $_SESSION['name'] = $user['name'];
-                    $_SESSION['email'] = $user['email'];
-                    $_SESSION['username'] = $user['username'];
-                    $_SESSION['password'] = $user['password'];
-                    $output = "Successfully logged in";    }
-                else{
-                    $output = "There was a problem, please try again";
-                }
-                   echo $output;     
-                }
-        ?>
-
-		<form action="#" method="post">
+		<form action="login.php" method="post">
 
 			<span style="margin-left: 55px; font-size: 25px; font-family: 'Roboto Condensed', sans-serif;">Login</span>
 			<br><br>
@@ -65,8 +37,12 @@
 				<span style="font-family: 'Roboto Condensed', sans-serif; opacity: 0.7;" >Don't have an account?</span><br>
 				<a href="signup.php" style="margin-left: 25px;">SIGN UP NOW</a>
 			</div>
-			
+			<?php
+				if (isset($_SESSION['message'])) {
+					display_message($_SESSION['message']);
+				}
+			 ?>
 		</form>
-		
+
 	</body>
 </html>
