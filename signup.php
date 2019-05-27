@@ -23,9 +23,18 @@
 				$confirmPassword = mysqli_real_escape_string($conn, ($_POST['password1']));
 
 				$query = $conn->query("SELECT * FROM user where username = '$username'");
+				$query1 = $conn->query("SELECT * FROM user where email = '$email'");
 				
+				$parts = explode(' ', $fullname);
+				$length = count($parts);
 				
-				if (empty($fullname) OR empty($email) OR empty($username) OR empty($password) OR empty($confirmPassword)) {
+				if ($length>2) {
+					$output = "*Please enter only your firstname and lastname*";
+				}
+				elseif ($length<=1) {
+					$output = "*Please enter both: your firstname and lastname*";
+				}
+				elseif (empty($fullname) OR empty($email) OR empty($username) OR empty($password) OR empty($confirmPassword)) {
 					$output = "*Please fill in all fields*";
 					}
 				elseif (!preg_match("/^[a-zA-Z ]*$/",$fullname)) {
@@ -34,6 +43,9 @@
 				elseif ($query->num_rows !=0) {
 					$output = "*That username is already taken.*";
 					}
+				elseif ($query1->num_rows !=0) {
+					$output = "*That email is alreday taken*";
+				}
 				elseif ($password != $confirmPassword) {
 					$output = "*Your passwords don't match*";
 				}
