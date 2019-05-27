@@ -50,7 +50,7 @@
 					$output = "*Your passwords don't match*";
 				}
 				elseif (strlen($password)<6) {
-					$output = "*Your password must be at least 5 characters.*";
+					$output = "*Your password must be at least 8 characters.*";
 				}
 				else{
 					//encrypt the password
@@ -67,7 +67,9 @@
 								$output = "*You have been registred!*";
 
 							}
-							
+
+							$fullname =implode("" , $parts);
+							$fullname = strtolower($fullname);
 							$_SESSION['name'] = $fullname;
 							header("Location: index.php");
 
