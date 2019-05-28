@@ -12,7 +12,7 @@ include("log_functions.php");?>
 				<?php if(!isset($_SESSION['name'])) {  ?>
 				<a href="signup.php"><button>Register</button></a>
 				<?php } ?>
-				<?php if(isset($_SESSION['name'])) echo "Welcome, " . $_SESSION['name']; ?>
+				<?php if(isset($_SESSION['name'])) echo $_SESSION['name']; ?>
 			<button><img src="img/addtocart.png" width="15px" height="15px"></button>
 
 		</div>

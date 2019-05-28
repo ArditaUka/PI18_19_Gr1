@@ -10,18 +10,20 @@
 	<body>
 		<?php 
 		session_start();
+		include_once 'database.php';	
 		$errormsg = '';
 		if (isset($_POST['login'])) {
-			include_once 'database.php';	
 			$email = $_POST['email'];
 			$password = md5($_POST['password']);
-			$query = $conn->query("SELECT * FROM user where email = '$email' && password = '$password'");
-				if ($query == 1) {
-				$_SESSION['name'] = mysqli_fetch_row($query)[1];
+			$query = $conn->query("SELECT * FROM user where email = '$email' and password = '$password'");
+			$row = mysqli_num_rows($query);
+				if ($row == 1) {
+
+				$_SESSION['name'] =mysqli_fetch_row($query)[1] ;
 				header("Location: index.php");
 			}
 			else{
-				$errormsg = "Email or Password is invalid!";
+				$errormsg = "*Email or Password is invalid!*";
 			}
 		}
 
@@ -41,12 +43,15 @@
 			<input type="password" name="password" placeholder="Password" class="inp"><br><br>
 			<button name="login" style="margin-bottom: 0px; margin-left: 45px;"> LOG IN</button>
 			</div>
-
+					
+				<?php 
+					echo "<p style = 'color:red;'><i>".$errormsg."</i></p>";
+				?>
 			<div>
 				<span style="font-family: 'Roboto Condensed', sans-serif; opacity: 0.7;" >Don't have an account?</span><br>
 				<a href="signup.php" style="margin-left: 25px;">SIGN UP NOW</a>
 			</div>
-			<?php echo $errormsg ?>
+			
 		</form>
 
 	</body>
