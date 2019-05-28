@@ -1,13 +1,3 @@
-<?php
-		session_start();
-
-		include ("log_functions.php");
-
-		if (isset($_POST['login'])) {
-			log_user_in($_POST['email'],$_POST['password']);
-		}
- ?>
-
 <!DOCTYPE html>
 <html>
 	<head>
@@ -18,6 +8,25 @@
 		<link rel="stylesheet" type="text/css" href="css/loginSignup.css">
 	</head>
 	<body>
+		<?php 
+		session_start();
+		$errormsg = '';
+		if (isset($_POST['login'])) {
+			include_once 'database.php';	
+			$email = $_POST['email'];
+			$password = md5($_POST['password']);
+			$query = $conn->query("SELECT * FROM user where email = '$email' && password = '$password'");
+				if ($query == 1) {
+				$_SESSION['name'] = mysqli_fetch_row($query)[1];
+				header("Location: index.php");
+			}
+			else{
+				$errormsg = "Email or Password is invalid!";
+			}
+		}
+
+		 ?>
+		
 
 		<form action="login.php" method="post">
 
@@ -37,11 +46,7 @@
 				<span style="font-family: 'Roboto Condensed', sans-serif; opacity: 0.7;" >Don't have an account?</span><br>
 				<a href="signup.php" style="margin-left: 25px;">SIGN UP NOW</a>
 			</div>
-			<?php
-				if (isset($_SESSION['message'])) {
-					display_message($_SESSION['message']);
-				}
-			 ?>
+			<?php echo $errormsg ?>
 		</form>
 
 	</body>
