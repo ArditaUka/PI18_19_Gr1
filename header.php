@@ -1,6 +1,56 @@
 
 <?php session_start();
 include("log_functions.php");?>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700&display=swap" rel="stylesheet">
+<style type="text/css">
+		.sesioni 
+		{
+		  position: relative;
+		  display: inline-block;
+		  font-family: 'Mandali', sans-serif;
+		  margin-top: 3px;
+	      width: 150px;
+	      height: 20px;
+	      background-color: white;
+	      color: #034F84;
+		  padding-top: 2px;
+	 	  padding-left: 4px;	 	  
+		  outline: none;
+		  border-radius: 5px;
+		  margin-left: 15px;	      
+		  font-size: 15px;
+		}
+		.sesioni-content {
+		  display: none;
+		  position: absolute;
+		  background-color: #034F84;
+		  min-width: 120px;
+		  box-shadow: 0px 8px 16px 0px rgba(0,0,0,1);
+		  z-index: 1;
+		  padding-top: 5px;
+          margin-top: 2px;
+    	  margin-left: -3px;
+		}
+
+		.sesioni-content a {
+		  color: white;
+		  padding: 12px 16px;
+		  text-decoration: none;
+		  display: block;
+		  font-size: 12px;
+		}
+		.sesioni-content a:hover 
+		{
+			display: block;
+			background-color: #006E6D;
+			transition: 0.2s;
+		}
+
+		.sesioni:hover .sesioni-content {
+		  display: block;
+		}
+
+</style>
 <header>
 		<div class="header container">
 			<h2 class="title">Exoy</h2>
@@ -12,7 +62,20 @@ include("log_functions.php");?>
 				<?php if(!isset($_SESSION['name'])) {  ?>
 				<a href="signup.php"><button>Register</button></a>
 				<?php } ?>
-				<?php if(isset($_SESSION['name'])) echo $_SESSION['name']; ?>
+				<?php if(isset($_SESSION['name']))
+						{
+							 echo "<div class= 'sesioni'><a href='#' style='color: #034F84'>".$_SESSION['name']."</a>".
+								 		"<div class='sesioni-content'>
+											<a href='products.php'>All products</a>
+											<a href='users.php'>Users</a>
+											<a href='logout.php'>Log out</a>
+
+										</div>
+
+
+								   </div>"; 
+						}
+				?>
 			<button><img src="img/addtocart.png" width="15px" height="15px"></button>
 
 		</div>
