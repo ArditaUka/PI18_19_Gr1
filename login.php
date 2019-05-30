@@ -14,6 +14,7 @@
 		$errormsg = '';
 		if (isset($_POST['login'])) {
 			$email = $_POST['email'];
+			$pass = $_POST['password'];
 			$password = md5($_POST['password']);
 			$query = $conn->query("SELECT * FROM user where email = '$email' and password = '$password'");
 			$row = mysqli_num_rows($query);
@@ -24,6 +25,15 @@
 			}
 			else{
 				$errormsg = "*Email or Password is invalid!*";
+			}
+			if($_POST['rememberme']==true)
+			 
+			{
+			 
+			setcookie("email",$email,time()+60*60*7);
+			 
+			setcookie("password",$pass,time()+60*60*7);
+			 
 			}
 		}
 
@@ -39,8 +49,8 @@
 
 			<div>
 			<span style="margin-left: 6px; font-size: 25px; font-family: 'Roboto Condensed', sans-serif;">Login with email</span>
-			<input type="email" name="email" placeholder="Email" class="inp"><br><br>
-			<input type="password" name="password" placeholder="Password" class="inp"><br><br>
+			<input type="email" name="email" value="<?php echo @$_COOKIE['email'];?>" placeholder="Email" class="inp"><br><br>
+			<input type="password" name="password" value="<?php echo @$_COOKIE['password'];?>" placeholder="Password" class="inp"><br><br>
 			<button name="login" style="margin-bottom: 0px; margin-left: 45px;"> LOG IN</button><br><br>
 			<input type="checkbox" name="rememberme"><label style="font-family: 'Roboto Condensed', sans-serif;">Remember Me</label>
 			</div>
