@@ -49,7 +49,7 @@
 				elseif ($password != $confirmPassword) {
 					$output = "*Your passwords don't match*";
 				}
-				elseif (strlen($password)<9) {
+				elseif (strlen($password)<8) {
 					$output = "*Your password must be at least 8 characters.*";
 				}
 				else{
