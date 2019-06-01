@@ -19,21 +19,21 @@
 
 			<div class="fund">
 
-				<a href="#">Buy iPhones</a><br>
-				<a href="#">Buy Video Games</a><br>
-				<a href="#">Buy Watches & Wearables</a><br>
-				<a href="#">Buy Home Tech</a><br>
-				<a href="#">Cheap Phones</a>
+				<a href="https://swappa.com/buy/iphones">Buy iPhones</a><br>
+				<a href="https://swappa.com/gaming">Buy Video Games</a><br>
+				<a href="https://swappa.com/wearables">Buy Watches & Wearables</a><br>
+				<a href="https://swappa.com/home-tech">Buy Home Tech</a><br>
+				<a href="https://swappa.com/buy/phones">Cheap Phones</a>
 				
 			</div>
 			<div class="fund">
 
-				<a href="#">Sell</a><br>
-				<a href="#">How to sell</a><br>
-				<a href="#">Sell iPhones</a><br>
-				<a href="#">Sell Phone</a><br>
-				<a href="#">Sell Tablet</a><br>
-				<a href="#">Sell Laptop</a>
+				<a href="https://swappa.com/sell">Sell</a><br>
+				<a href="https://swappa.com/how-to-sell">How to sell</a><br>
+				<a href="https://swappa.com/sell/iphone">Sell iPhones</a><br>
+				<a href="https://swappa.com/sell/phone">Sell Phone</a><br>
+				<a href="https://swappa.com/sell/tablets">Sell Tablet</a><br>
+				<a href="https://swappa.com/sell/laptops">Sell Laptop</a>
 
 			</div>
 			<div class="fund">
