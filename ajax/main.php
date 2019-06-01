@@ -12,15 +12,15 @@
 
 		<?php echo $products;  ?>
 
-		
 
-		<form class="comment_form" action="server.php" method="POST">
 
-			
+		<form class="comment_form" action="main.php" method="POST">
+
+
 			<div>
 				<label for="name">Product name:</label>
 				<input type="text" name="name" id="name">
-			
+
 			</div>
 			<div>
 				<label for="comment">Details:</label>

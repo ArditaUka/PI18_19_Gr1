@@ -3,7 +3,7 @@
 include("log_functions.php");?>
 <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700&display=swap" rel="stylesheet">
 <style type="text/css">
-		.sesioni 
+		.sesioni
 		{
 		  position: relative;
 		  display: inline-block;
@@ -14,10 +14,10 @@ include("log_functions.php");?>
 	      background-color: white;
 	      color: #034F84;
 		  padding-top: 2px;
-	 	  padding-left: 4px;	 	  
+	 	  padding-left: 4px;
 		  outline: none;
 		  border-radius: 5px;
-		  margin-left: 15px;	      
+		  margin-left: 15px;
 		  font-size: 15px;
 		}
 		.sesioni-content {
@@ -39,7 +39,7 @@ include("log_functions.php");?>
 		  display: block;
 		  font-size: 12px;
 		}
-		.sesioni-content a:hover 
+		.sesioni-content a:hover
 		{
 			display: block;
 			background-color: #006E6D;
@@ -73,7 +73,7 @@ include("log_functions.php");?>
 										</div>
 
 
-								   </div>"; 
+								   </div>";
 						}
 				?>
 			<button><img src="img/addtocart.png" width="15px" height="15px"></button>
