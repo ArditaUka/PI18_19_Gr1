@@ -10,33 +10,36 @@
 	<body>
 		<?php 
 		session_start();
-		include_once 'database.php';	
-		$errormsg = '';
-		if (isset($_POST['login'])) {
-			$email = $_POST['email'];
-			$pass = $_POST['password'];
-			$password = md5($_POST['password']);
-			$query = $conn->query("SELECT * FROM user where email = '$email' and password = '$password'");
-			$row = mysqli_num_rows($query);
-				if ($row == 1) {
+        
+		include_once 'database.php';
+					$errormsg = '';
+                if (isset($_POST['login'])) {
 
-				$_SESSION['name'] =mysqli_fetch_row($query)[1] ;
-				header("Location: index.php");
-			}
-			else{
-				$errormsg = "*Email or Password is invalid!*";
-			}
-			if($_POST['rememberme']==true)
-			 
-			{
-			 
-			setcookie("email",$email,time()+60*60*7);
-			 
-			setcookie("password",$pass,time()+60*60*7);
-			 
-			}
-		}
+                    $email = $_POST['email'];
+                    $pass = $_POST['password'];
+                    $password = md5($_POST['password']);
+                    $query = $conn->query("SELECT * FROM user where email = '$email' and password = '$password'");
+                    $row = mysqli_num_rows($query);
+                    if ($row == 1) {
 
+                        $_SESSION['name'] =mysqli_fetch_row($query)[1] ;
+                        header("Location: index.php");
+                    }
+                    else{
+                        $errormsg = "*Email or Password is invalid!*";
+                    }
+                    if(isset($_POST['rememberme']) == true)
+
+                    {
+                    	 setcookie("email",$email,time()+(86400*30));
+
+       					 setcookie("password",$pass,time()+(86400*30));
+
+                    }
+                }
+            
+        
+        
 		 ?>
 		
 
@@ -66,4 +69,3 @@
 		</form>
 
 	</body>
-</html>

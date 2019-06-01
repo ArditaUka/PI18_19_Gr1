@@ -8,11 +8,12 @@
 	<body class="bgimg">
 
 		<?php 
+session_start();
+			/**
+			* 
+			*/
 
-			session_start();
-
-			$output = '';
-
+				$output = '';
 			if(isset($_POST['submit'])){
 				//connect to database
 				include_once 'database.php';
@@ -65,13 +66,13 @@
 							}
 							else{
 								$output = "*You have been registred!*";
-
+								$fullname =implode("" , $parts);
+								$fullname = strtolower($fullname);
+								$_SESSION['name'] = $fullname;
+								header("Location: index.php");
 							}
 
-							$fullname =implode("" , $parts);
-							$fullname = strtolower($fullname);
-							$_SESSION['name'] = $fullname;
-							header("Location: index.php");
+							
 
 				}
 			}
