@@ -59,12 +59,12 @@
 
 			<div class="fund">
 
-				<a href="#">About Exoy</a><br>
-				<a href="#">Blog</a><br>
-				<a href="#">Contact Customers </a><br>
-				<a href="#">Press, Reviews</a><br>
-				<a href="#">Polices, Fees</a><br>
-				<a href="#">Terms of Use</a>
+				<a href="https://swappa.com/about">About Exoy</a><br>
+				<a href="https://swappa.com/blog/">Blog</a><br>
+				<a href="#">Contact US </a><br>
+				<a href="https://swappa.com/reviews">Press, Reviews</a><br>
+				<a href="https://swappa.com/policies">Polices, Fees</a><br>
+				<a href="https://swappa.com/terms">Terms of Use</a>
 
 			</div>
 			
