@@ -8,12 +8,12 @@
 
 			<div class="fund">
 
-				<a href="#">Buy</a><br>
-				<a href="#">Buy Phones</a><br>
-				<a href="#">Buy Tablets</a><br>
-				<a href="#">Buy MacBooks</a><br>
-				<a href="#">Buy Laptops</a><br>
-				<a href="#">Buy Cameras</a>
+				<a href="https://swappa.com/buy">Buy</a><br>
+				<a href="https://swappa.com/buy/phones">Buy Phones</a><br>
+				<a href="https://swappa.com/buy/tablets">Buy Tablets</a><br>
+				<a href="https://swappa.com/laptops/macbooks">Buy MacBooks</a><br>
+				<a href="https://swappa.com/laptops">Buy Laptops</a><br>
+				<a href="https://swappa.com/cameras">Buy Cameras</a>
 				
 			</div>
 
