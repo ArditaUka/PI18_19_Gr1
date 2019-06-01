@@ -38,22 +38,22 @@
 			</div>
 			<div class="fund">
 
-				<a href="#">Phone Finder</a><br>
-				<a href="#">IMEI/ ESN Check</a><br>
-				<a href="#">Swappa vs eBay</a><br>
-				<a href="#">Swappa vs Craigslist</a><br>
-				<a href="#">Affiliate Program</a>
+				<a href="https://swappa.com/phone-finder">Phone Finder</a><br>
+				<a href="https://swappa.com/403?country=AL">IMEI/ ESN Check</a><br>
+				<a href="https://swappa.com/vs/ebay">Swappa vs eBay</a><br>
+				<a href="https://swappa.com/vs/craigslist">Swappa vs Craigslist</a><br>
+				<a href="https://swappa.com/affiliate">Affiliate Program</a>
 
 			</div>
 
 			<div class="fund">
 
-				<a href="#">Helo</a><br>
-				<a href="#">FAQs</a><br>
-				<a href="#">Data Services</a><br>
-				<a href="#">Price Lists</a><br>
-				<a href="#">Broken, Repair</a><br>
-				<a href="#">Protection Plans</a>
+				<a href="https://swappa.com/help">Help</a><br>
+				<a href="https://swappa.com/faq">FAQs</a><br>
+				<a href="https://swappa.com/data-services">Data Services</a><br>
+				<a href="https://swappa.com/mobile-price-list">Price Lists</a><br>
+				<a href="https://swappa.com/repair">Broken, Repair</a><br>
+				<a href="https://swappa.com/protection-plans">Protection Plans</a>
 
 			</div>
 
