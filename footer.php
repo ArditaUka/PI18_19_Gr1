@@ -61,7 +61,7 @@
 
 				<a href="#">About Exoy</a><br>
 				<a href="#">Blog</a><br>
-				<a href="#">Contact us </a><br>
+				<a href="#">Contact Customers </a><br>
 				<a href="#">Press, Reviews</a><br>
 				<a href="#">Polices, Fees</a><br>
 				<a href="#">Terms of Use</a>
