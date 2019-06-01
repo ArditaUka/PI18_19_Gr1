@@ -1,15 +1,21 @@
 <?php
 session_start();
 ?>
+
 <!DOCTYPE html>
+
 <html>
 	<head>
+
 		<title>Millionaire</title>
 		<link rel="stylesheet" type="text/css" media="all" href="homestyle.css"/>
+
 	</head>
 	<body>
             
                 <form action="mill1.php" method="post">
+
+
 		<?php                
                 $answer = $_POST['q1'];
                 if($_SESSION["question"]===1)
@@ -268,6 +274,11 @@ session_start();
                     }
                 }
                 ?>
+
+
                 </form>
+
+
+                
                 </body>
 </html>
