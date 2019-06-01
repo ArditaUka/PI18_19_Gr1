@@ -48,11 +48,11 @@ $(document).ready(function(){
 
 	//kur perdoruesi klikon ne delete butoni
 	var edit_id;
-	var $edit_comment;
+	var $edit_product;
 	$(document).on('click', '.edit', function(){
 		//vendosi properties of comment being edited
 		edit_id = $(this).data('id');
-		$edit_comment = $(this).parent();
+		$edit_product = $(this).parent();
 
 		//merri name dhe text qe te editohet
 		var name = $(this).siblings('.display_name').text();
