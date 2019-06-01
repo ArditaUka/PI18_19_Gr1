@@ -1,0 +1,26 @@
+body {
+	text-align: center;
+	background-color: navy;
+	background-image: url("millionaire.jpg");
+	background-size: cover;
+	font-family: serif;
+	color: white;
+}
+table {
+	margin-left: 10%;	
+}
+td {
+	border: 2px;
+	border-radius: 4px;
+	border-color: 3px;
+	font-size: 20px;
+	padding: 5px;
+	margin: 0;
+	width: 500px;
+}
+#question {
+	border: 2px;
+	border-radius: 4px;
+	border-color: 3px;
+	margin-bottom: 20px;
+}
