@@ -7,10 +7,10 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<h1 style="text-align: center;">Register your product </h1>
+	<h1 style="text-align: center;"> Register your product </h1>
 	<div class="wrapper">
 
-		<?php echo $comments;  ?>
+		<?php echo $products;  ?>
 
 		
 
