@@ -104,11 +104,12 @@ session_start();
 			<br><br>
 			<button name="submit" id="btn">Sign Up</button><br>
 			<?php 
-			$boldOutput = preg_replace("$output","<b>$output<b>",$output);
-			echo "<p style = 'color:red;'><i>".$boldOutput."</i></p>"; 
-			echo "<br>";
-
-				?>
+			if ($output !== '') {
+				$boldOutput = preg_replace("$output","<b>$output<b>",$output);
+					echo "<p style = 'color:red;'><i>".$boldOutput."</i></p>"; 
+				echo "<br>";	
+			}
+		?>
 			<a href="login.php">Already have an account?Login here!</a>
 
 			
