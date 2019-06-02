@@ -28,12 +28,16 @@ session_start();
 				
 				$parts = explode(' ', $fullname);
 				$length = count($parts);
-				
+				$username_array = preg_split("/ /", $username);
+				$length1 = count($username_array);
 				if ($length>2) {
 					$output = "*Please enter only your firstname and lastname*";
 				}
 				elseif ($length<=1) {
 					$output = "*Please enter both: your firstname and lastname*";
+				}
+				elseif ($length1>1) {
+					$output = "*Your username must not contain spaces*";
 				}
 				elseif (empty($fullname) OR empty($email) OR empty($username) OR empty($password) OR empty($confirmPassword)) {
 					$output = "*Please fill in all fields*";
@@ -100,8 +104,10 @@ session_start();
 			<br><br>
 			<button name="submit" id="btn">Sign Up</button><br>
 			<?php 
-			echo "<p style = 'color:red;'><i>".$output."</i></p>"; 
+			$boldOutput = preg_replace("$output","<b>$output<b>",$output);
+			echo "<p style = 'color:red;'><i>".$boldOutput."</i></p>"; 
 			echo "<br>";
+
 				?>
 			<a href="login.php">Already have an account?Login here!</a>
 
