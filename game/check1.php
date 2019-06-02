@@ -9,6 +9,7 @@ session_start();
 
 		<title>Millionaire</title>
 		<link rel="stylesheet" type="text/css" media="all" href="homestyle.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700&display=swap" rel="stylesheet">
 
 	</head>
 	<body>

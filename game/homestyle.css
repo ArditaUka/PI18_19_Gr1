@@ -3,14 +3,14 @@ body {
 	background-color: navy;
 	background-image: url("millionaire.jpg");
 	background-size: cover;
-	font-family: serif;
+	font-family: 'Mandali', sans-serif;
 	color: white;
 }
 div {
-	border: 2px;
-	border-radius: 4px;
+	border: 2px solid white;
+	border-radius: 8px;
 	width: 150px;
-	margin-left: 44%;
+	margin-left: 45%;
 }
 a {
 	color: white;

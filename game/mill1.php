@@ -6,6 +6,7 @@
     <head>
 
 		<title>Millionaire</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" media="all" href="style.css"/>
 
     </head>
@@ -17,7 +18,7 @@
         
         if($_SESSION["question"]===1)
         {
-            echo "Stage 1";
+            echo "<div class='stage'>Stage 1</div>";
             echo '<br />';
             $random = rand(1,3);
               
@@ -69,7 +70,7 @@
         }
         else if($_SESSION["question"]===2)
         {
-            echo "Stage 2";
+            echo "<div class='stage'>Stage 2</div>";
             echo '<br />';
             $random = rand(1,3);
               
@@ -121,7 +122,7 @@
         }
         else if($_SESSION["question"]===3)
         {
-            echo "Stage 3";
+            echo "<div class='stage'>Stage 3</div>";
             echo '<br />';
             $random = rand(1,3);
               
@@ -173,7 +174,7 @@
         }
         else if($_SESSION["question"]===4)
         {
-            echo "Stage 4";
+            echo "<div class='stage'>Stage 4</div>";
             echo '<br />';
             $random = rand(1,3);
               
@@ -224,7 +225,7 @@
         }
         else if($_SESSION["question"]===5)
         {
-            echo "Stage 5";
+            echo "<div class='stage'>Stage 5</div>";
             echo '<br />';
             $random = rand(1,3);
               
@@ -275,7 +276,7 @@
         }
         else if($_SESSION["question"]===6)
         {
-            echo "Stage 6";
+            echo "<div class='stage'>Stage 6</div>";
             echo '<br />';
             $random = rand(1,3);
               
@@ -327,7 +328,7 @@
         }
         else if($_SESSION["question"]===7)
         {
-            echo "Stage 7";
+            echo "<div class='stage'>Stage 7</div>";
             echo '<br />';
             $random = rand(1,3);
               
@@ -379,7 +380,7 @@
         }
         else if($_SESSION["question"]===8)
         {
-            echo "Stage 8";
+            echo "<div class='stage'>Stage 8</div>";
             echo '<br />';
             $random = rand(1,3);
               
@@ -431,7 +432,7 @@
         }
         else if($_SESSION["question"]===9)
         {
-            echo "Stage 9";
+            echo "<div class='stage'>Stage 9</div>";
             echo '<br />';
             $random = rand(1,3);
               
@@ -482,7 +483,7 @@
         }
         else if($_SESSION["question"]===10)
         {
-            echo "Stage 10";
+            echo "<div class='stage'>Stage 10</div>";
             echo '<br />';
             $random = rand(1,3);
               
@@ -534,7 +535,7 @@
         }
         else if($_SESSION["question"]===11)
         {
-            echo "Stage 11";
+            echo "<div class='stage'>Stage 11</div>";
             echo '<br />';
             $random = rand(1,3);
               
@@ -586,7 +587,7 @@
         }
         else if($_SESSION["question"]===12)
         {
-            echo "Stage 12";
+            echo "<div class='stage'>Stage 12</div>";
             echo '<br />';
             $random = rand(1,3);
               
@@ -637,7 +638,7 @@
         }
         else if($_SESSION["question"]===13)
         {
-            echo "Stage 13";
+            echo "<div class='stage'>Stage 13</div>";
             echo '<br />';
             $random = rand(1,3);
               
@@ -689,7 +690,7 @@
         }
         else if($_SESSION["question"]===14)
         {
-            echo "Stage 14";
+            echo "<div class='stage'>Stage 14</div>";
             echo '<br />';
             $random = rand(1,3);
               
@@ -741,7 +742,7 @@
         }
         else if($_SESSION["question"]===15)
         {
-            echo "Stage 15";
+            echo "<div class='stage'>Stage 15</div>";
             echo '<br />';
             $random = rand(1,3);
              
