@@ -6,8 +6,8 @@
 	<title>Produktet</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
-	<h1 style="text-align: center;"> Register your product </h1>
+<body bgcolor="#00539C">
+	<h1 style="text-align: center; color: white;"> Register your products </h1>
 	<div class="wrapper">
 
 		<?php echo $products;  ?>

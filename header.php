@@ -66,8 +66,8 @@ include("log_functions.php");?>
 						{
 							 echo "<div class= 'sesioni'><a href='#' style='color: #034F84'>".$_SESSION['name']."</a>".
 								 		"<div class='sesioni-content'>
-											<a href='ajax/main.php'>All products</a>
-											<a href='users.php'>Users</a>
+											<a href='ajax/main.php'>Products</a>
+											<a href='ajax/products.php'>Show all products</a>
 											<a href='logout.php'>Log out</a>
 
 										</div>
