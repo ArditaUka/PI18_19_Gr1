@@ -68,7 +68,13 @@ $login_url = 'https://accounts.google.com/o/oauth2/v2/auth?scope=' . urlencode('
 			</div>
 					
 				<?php 
-					echo "<p style = 'color:red;'><i>".$errormsg."</i></p>";
+
+				if ($errormsg !== '') {
+					$berrormsg = str_replace("$errormsg","<b>$errormsg<b>",$errormsg);
+					echo "<p style = 'color:red;'><i>".$berrormsg."</i></p>"; 
+					echo "<br>";	
+					}
+
 				?>
 			<div>
 				<span style="font-family: 'Roboto Condensed', sans-serif; opacity: 0.7;" >Don't have an account?</span><br>

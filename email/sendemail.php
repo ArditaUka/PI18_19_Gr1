@@ -57,16 +57,23 @@
 	   $mail ->Body =  $mailMsg;
 	   $mail ->AddAddress($mailto);
 
+
+	   $length = strlen($mailto);
+	   	$valid = substr(@gmail,($length-1));
 	   if(!$mail->Send())
 	   {
-
 			 $message = "Email not sent, try again";
 	echo "<script type='text/javascript'>alert('$message');</script>";
 	   }
+	   elseif (!$valid) {
+	   		$message = "Email does not contain gmail";
+	   		echo "<script type='text/javascript'>alert('$message');</script>";
+	   		}
+
 	   else
 	   {
-
+	   		
 			 $message1 = "Email sent";
-		 echo "<script type='text/javascript'>alert('$message1');</script>";
+		 	echo "<script type='text/javascript'>alert('$message1');</script>";
 		 }
 	   ?>
