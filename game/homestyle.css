@@ -1,0 +1,18 @@
+body {
+	text-align: center;
+	background-color: navy;
+	background-image: url("millionaire.jpg");
+	background-size: cover;
+	font-family: 'Mandali', sans-serif;
+	color: white;
+}
+div {
+	border: 2px solid white;
+	border-radius: 8px;
+	width: 150px;
+	margin-left: 45%;
+}
+a {
+	color: white;
+	text-decoration: none;
+}

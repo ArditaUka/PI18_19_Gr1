@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Contact</title>
+	<title>Contact Customers</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -18,7 +18,7 @@
 					<img src="images/exoy.png" alt="IMG">
 				</div>
 
-				<form class="form1" method="post" action="index.php">
+				<form class="form1" method="post" action="sendemail.php">
 					<span class="prg">
 						We care about our customers
 					</span>
@@ -37,7 +37,7 @@
 
 					<div class="btndiv">
 						<input class="btn" type="submit" value="Send Email" name="sub">
-						<a href="../index.php" class="prg">Go back to homepage</a>
+						<a href="../index.php" class="prg" style="padding-top:20px;">HOMEPAGE</a>
 					</div>
 
 
@@ -47,41 +47,5 @@
 			</div>
 		</div>
 	</div>
-
-	<?php
-	 	 $mailto = $_POST['mail_to'];
-	    $mailSub = $_POST['mail_sub'];
-	    $mailMsg = $_POST['mail_msg'];
-	 	require 'PHPMailer/PHPMailerAutoload.php';
-
-	    $mail = new PHPMailer();
-	   $mail ->IsSmtp();
-	   $mail ->SMTPDebug = 0;
-	   $mail ->SMTPAuth = true;
-	   $mail ->SMTPSecure = 'ssl';
-	   $mail ->Host = "smtp.gmail.com";
-	   $mail ->Port = 465; // porti per EMAIL
-	   $mail ->IsHTML(true);
-	   $mail ->Username = "exoy.exoy123@gmail.com";
-	   $mail ->Password = "111exoy222";
-	   $mail ->SetFrom("exoy.exoy123@gmail.com");
-	   $mail ->Subject = $mailSub;
-	   $mail ->Body =  $mailMsg;
-	   $mail ->AddAddress($mailto);
-
-	   if(!$mail->Send())
-	   {
-
-			 $message = "Email not sent, try again";
-	echo "<script type='text/javascript'>alert('$message');</script>";
-	   }
-	   else
-	   {
-
-			 $message1 = "Email sent";
-		 echo "<script type='text/javascript'>alert('$message1');</script>";
-		 }
-	   ?>
-
 </body>
 </html>
