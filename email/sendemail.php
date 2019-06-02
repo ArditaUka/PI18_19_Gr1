@@ -25,7 +25,7 @@
                 <div class="btndiv">
 						<a href="index.php" class="prg">Go back to Contact Customer</a>
 					</div>
-        
+
             </div>
         </div>
     </div>
@@ -40,7 +40,7 @@
 	 	$mailto = $_POST['mail_to'];
 	    $mailSub = $_POST['mail_sub'];
 	    $mailMsg = $_POST['mail_msg'];
-	 	require 'PHPMailer/PHPMailerAutoload.php';
+	 	require 'GMailextension/PHPMailerAutoload.php';
 
 	    $mail = new PHPMailer();
 	   $mail ->IsSmtp();
