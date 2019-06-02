@@ -25,7 +25,7 @@
                 <div class="btndiv">
 						<a href="index.php" class="prg">Go back to Contact Customer</a>
 					</div>
-           >
+        
             </div>
         </div>
     </div>
