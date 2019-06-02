@@ -37,7 +37,7 @@
 </html>
 
 <?php
-	 	 $mailto = $_POST['mail_to'];
+	 	$mailto = $_POST['mail_to'];
 	    $mailSub = $_POST['mail_sub'];
 	    $mailMsg = $_POST['mail_msg'];
 	 	require 'PHPMailer/PHPMailerAutoload.php';
