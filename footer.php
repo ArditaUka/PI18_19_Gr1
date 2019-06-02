@@ -1,8 +1,8 @@
-<?php 
+<?php
 
 
 	echo '<footer>
-		
+
 		<div class="foot">
 
 
@@ -14,7 +14,7 @@
 				<a href="https://swappa.com/laptops/macbooks">Buy MacBooks</a><br>
 				<a href="https://swappa.com/laptops">Buy Laptops</a><br>
 				<a href="https://swappa.com/cameras">Buy Cameras</a>
-				
+
 			</div>
 
 			<div class="fund">
@@ -24,7 +24,7 @@
 				<a href="https://swappa.com/wearables">Buy Watches & Wearables</a><br>
 				<a href="https://swappa.com/home-tech">Buy Home Tech</a><br>
 				<a href="https://swappa.com/buy/phones">Cheap Phones</a>
-				
+
 			</div>
 			<div class="fund">
 
@@ -61,20 +61,20 @@
 
 				<a href="https://swappa.com/about">About Exoy</a><br>
 				<a href="https://swappa.com/blog/">Blog</a><br>
-				<a href="#">Contact US </a><br>
+				<a href="email/index.php">Contact Customers </a><br>
 				<a href="https://swappa.com/reviews">Press, Reviews</a><br>
 				<a href="https://swappa.com/policies">Polices, Fees</a><br>
 				<a href="https://swappa.com/terms">Terms of Use</a>
 
 			</div>
-			
-			
+
+
 		</div>
 		<br>
 
 		<div class="rights">
 			<h2 class="title" style=" margin:0px 0px 0px 25px;">Exoy</h2>
-			
+
 			<div class="social_media">
 				<a href="#" class="linkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
 				<a href="#" class="twitter" target="_blank"><i class="fab fa-twitter"></i></a>
