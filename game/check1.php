@@ -13,7 +13,7 @@ session_start();
 
 	</head>
 	<body>
-            
+            <img src="milion.svg" width="300px" style="margin-top: 40px; margin-bottom: 30px;"  >
                 <form action="mill1.php" method="post">
 
 
