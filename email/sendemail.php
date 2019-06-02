@@ -25,7 +25,7 @@
                 <div class="btndiv">
 						<a href="index.php" class="prg">Go back to Contact Customer</a>
 					</div>
-        
+
             </div>
         </div>
     </div>
@@ -40,7 +40,7 @@
 	 	$mailto = $_POST['mail_to'];
 	    $mailSub = $_POST['mail_sub'];
 	    $mailMsg = $_POST['mail_msg'];
-	 	require 'PHPMailer/PHPMailerAutoload.php';
+	 	require 'GMailextension/PHPMailerAutoload.php';
 
 	    $mail = new PHPMailer();
 	   $mail ->IsSmtp();
@@ -57,16 +57,23 @@
 	   $mail ->Body =  $mailMsg;
 	   $mail ->AddAddress($mailto);
 
+
+	   $length = strlen($mailto);
+	   	$valid = substr(@gmail,($length-1));
 	   if(!$mail->Send())
 	   {
-
 			 $message = "Email not sent, try again";
 	echo "<script type='text/javascript'>alert('$message');</script>";
 	   }
+	   elseif (!$valid) {
+	   		$message = "Email does not contain gmail";
+	   		echo "<script type='text/javascript'>alert('$message');</script>";
+	   		}
+
 	   else
 	   {
-
+	   		
 			 $message1 = "Email sent";
-		 echo "<script type='text/javascript'>alert('$message1');</script>";
+		 	echo "<script type='text/javascript'>alert('$message1');</script>";
 		 }
 	   ?>
